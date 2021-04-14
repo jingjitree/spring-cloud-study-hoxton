@@ -1,0 +1,19 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    config:
+      profile: ${spring.profiles.active}
+      label: master
+#      discovery:
+#        enabled: true
+#        service-id: app-config
+
+eureka:
+  instance:
+    #优先使用IP地址进行注册服务
+    prefer-ip-address: true
+
+  client:
+    service-url:
+      defaultZone: http://${info.eureka.host}:${info.eureka.port}/eureka/
