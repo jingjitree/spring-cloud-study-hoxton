@@ -1,0 +1,36 @@
+info:
+  eureka:
+    host: localhost
+    port: 8761
+
+server:
+  port: 8888
+
+spring:
+  application:
+    name: app-config
+  #使用本地的配置文件，需要设置
+  profiles:
+    active: native
+
+  cloud:
+    config:
+      server:
+        #本地配置
+        native:
+          search-locations: classpath:/config/
+          default-label: master
+
+eureka:
+  #自定义实例
+  instance:
+    #优先使用IP地址进行注册服务
+    prefer-ip-address: true
+    #配置使用指定IP
+    #ip-address:
+
+  client:
+    fetch-registry: true
+    service-url:
+      defaultZone: http://${info.eureka.host}:${info.eureka.port}/eureka/
+
