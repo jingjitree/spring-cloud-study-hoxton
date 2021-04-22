@@ -1,4 +1,4 @@
-package top.inson.springcloud.hoxton.data.core;
+package top.inson.springcloud.hoxton.basic.data.core;
 
 
 import com.alibaba.druid.pool.DruidDataSource;
