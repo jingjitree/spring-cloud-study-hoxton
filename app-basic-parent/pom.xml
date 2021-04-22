@@ -15,6 +15,7 @@
     <modules>
         <module>app-basic-util</module>
         <module>app-basic-common</module>
+        <module>app-basic-data</module>
     </modules>
 
 </project>
