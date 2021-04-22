@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import top.inson.springcloud.hoxton.basic.common.entity.Users;
-import top.inson.springcloud.hoxton.data.dao.IUsersMapper;
+import top.inson.springcloud.hoxton.basic.data.dao.IUsersMapper;
 
 @Slf4j
 @Component
