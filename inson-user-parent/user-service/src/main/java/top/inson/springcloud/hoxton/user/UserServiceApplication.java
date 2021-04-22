@@ -8,6 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringCloudApplication
 @EnableFeignClients
+@ComponentScan(basePackages = "top.inson.springcloud.hoxton")
 public class UserServiceApplication {
 
     public static void main(String[] args) {
