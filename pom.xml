@@ -56,6 +56,11 @@
                 <artifactId>app-basic-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>top.inson.springcloud</groupId>
+                <artifactId>app-basic-data</artifactId>
+                <version>${project.version}</version>
+            </dependency>
 
             <!--引入数据库配置-->
             <dependency>
@@ -67,12 +72,6 @@
                 <groupId>tk.mybatis</groupId>
                 <artifactId>mapper-spring-boot-starter</artifactId>
                 <version>2.1.5</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>1.18.12</version>
             </dependency>
 
             <dependency>
