@@ -1,4 +1,4 @@
-package top.inson.springcloud.hoxton.user.core;
+package top.inson.springcloud.hoxton.data.core;
 
 
 import com.alibaba.druid.pool.DruidDataSource;
@@ -15,24 +15,11 @@ import javax.sql.DataSource;
 
 @Configuration
 public class DruidConfiguration {
-    @Value("${spring.datasource.url}")
-    private String url;
-
-    @Value("${spring.datasource.username}")
-    private String username;
-
-    @Value("${spring.datasource.password}")
-    private String password;
-
 
     @Bean(destroyMethod = "close", initMethod = "init")
     @ConfigurationProperties(prefix = "spring.datasource.druid")
     public DataSource dataSource(){
-        DruidDataSource dataSource = new DruidDataSource();
-        dataSource.setUrl(url);
-        dataSource.setUsername(username);
-        dataSource.setPassword(password);
-        return dataSource;
+        return new DruidDataSource();
     }
 
     @Bean

@@ -1,4 +1,4 @@
-package top.inson.springcloud.hoxton.user.dao;
+package top.inson.springcloud.hoxton.data.dao;
 
 import top.inson.springcloud.hoxton.basic.common.base.ITKBaseMapper;
 import top.inson.springcloud.hoxton.basic.common.entity.Users;
