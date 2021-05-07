@@ -1,4 +1,4 @@
-package top.inson.springcloud.hoxton.user;
+package top.inson.springcloud.hoxton;
 
 
 import org.springframework.boot.SpringApplication;
@@ -8,7 +8,6 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringCloudApplication
 @EnableFeignClients
-@ComponentScan(basePackages = "top.inson.springcloud.hoxton")
 public class UserServiceApplication {
 
     public static void main(String[] args) {
